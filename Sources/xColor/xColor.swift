@@ -26,6 +26,22 @@ public struct xColor: xColorRepresenting {
     
     public var darkColor: xColorValue? = nil
     public var lightColor: xColorValue? = nil
+    
+    public init(
+        red: CGFloat,
+        green: CGFloat,
+        blue: CGFloat,
+        alpha: CGFloat,
+        darkColor: xColorValue? = nil,
+        lightColor: xColorValue? = nil
+    ) {
+        self.red = red
+        self.green = green
+        self.blue = blue
+        self.alpha = alpha
+        self.darkColor = darkColor
+        self.lightColor = lightColor
+    }
 }
 
 extension xColor: UIColorProviding {
